@@ -13,6 +13,6 @@ void loop(){
 }
 
 void cambiaestado(){
-  estadoLed=~estadoLed
+  estadoLed=~estadoLed;
   digitalWrite(pinLed,estadoLed);
   }
