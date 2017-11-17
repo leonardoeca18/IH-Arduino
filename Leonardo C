@@ -1,0 +1,17 @@
+const int pinLed = 9;
+int retardo = 2000;
+int estadoLed = 0;
+
+void setup() {
+  DDRB = 0b111111;
+}
+ 
+void loop(){ 
+  
+     cambiaestado(11);
+     delay(retardo);
+}
+
+void cambiaestado(int num){
+      DDRB = DDRB ^ (0b0000000 = 1<<(num-8));
+      }
