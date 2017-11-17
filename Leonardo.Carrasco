@@ -1,0 +1,18 @@
+const int pinLed = 9;
+int estadoLed = 0;
+int retardo = 2000;
+ 
+void setup() {
+  Serial.begin(9600);
+  DDRB = 0b111111;
+}
+ 
+void loop(){  
+     cambiaestado();
+     delay(retardo);
+}
+
+void cambiaestado(){
+  estadoLed=~estadoLed
+  digitalWrite(pinLed,estadoLed);
+  }
